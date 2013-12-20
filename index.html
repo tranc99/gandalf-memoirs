@@ -1,0 +1,85 @@
+<html>	
+	<head>
+		<title>page</title>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1 id="topics" class="bigDeal">hi there</h1>
+		
+		<script>
+			alert("hello world!");
+			if(10 >= 15) {
+				alert("greater than");
+				} else {
+					alert("less than");
+				}
+			
+			var i = 1;
+			while (i < 10) {
+				//alert(i);
+				i = i + 1;
+				}
+				
+				
+			var add = function (a, b) {
+				return a + b;
+			};
+				
+			var result = add(1, 5);
+			alert(result);
+			
+			var jedi = {
+				name: "Yoda",
+				age: 899,
+				talk: function () { alert("another.....SKy........walk"); }
+				
+				};
+			
+			alert("Jedi object");
+			alert(jedi.name);
+			alert(jedi.age);
+			alert("let 'im talk");
+			jedi.talk();
+			
+			jedi.name = "Mace Windu";
+			jedi.lightsaber = "purple";
+			alert(jedi.name + jedi.lightsaber);
+			
+			var emptyArray = [];
+			
+			var shoppingList = ['Milk', 'Bread', 'Beans'];
+			
+			shoppingList[2] = "cookies";
+			alert(shoppingList[2]);
+			shoppingList.push("A new car");
+			
+			alert(shoppingList.length);
+			
+			//var whatType = (document.getElementById("topics")).nodeName;
+			//alert(whatType);
+			
+			var handleClick = function (event) {
+					alert("clang, clang, click!");
+				};
+			
+			var button = document.querySelector("#topics");
+			button.addEventListener('mouseover', handleClick);
+			
+			var jsonString = JSON.stringify({
+					make: "McLaren",
+					model: "MP4-12C",
+					miles: 5023
+			});
+			alert("jsonString");
+			alert(jsonString);
+			
+			var car = JSON.parse(jsonString);
+			alert("car name: " + car.make);
+			console.log("yadda yadda 2 begin jquery");
+			
+			$(".bigDeal").css('background', 'red').height(100);
+		
+		</script>
+		<h1 id="topics2" class="bigDeal">hi there</h1>
+	</body>
+</html>

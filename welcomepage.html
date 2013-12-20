@@ -1,0 +1,48 @@
+<html>	
+	<head>
+		<title>page</title>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	</head>
+	<body OnLOad="document.myform.mytextfield.focus()">
+		<h1 id="topics" class="bigDeal">hi there</h1>
+		
+		<script>
+		
+			
+			$(".bigDeal").css('background', 'red').height(100);
+			
+			var currentHeight = $('.bigDeal').height();
+			currentColor = $('.note').css('color');
+			document.write("<p>height:", currentHeight, "</p>");
+		
+		</script>
+		<h1 id="topics2" class="bigDeal">hi there</h1>
+		<form name="myform">
+			<input type="text" name="mytextfield">
+		</form>
+		
+		<script>
+		
+			
+		//var doStuff = function(event) { document.write("that was rockin"); };
+		//window.addEventListener("DOMContentLoaded", doStuff);
+		
+		//$(window).ready(doStuff);
+		//$(window).load(doStuff);
+		var truther = $.isArray([1, 2, 3]);
+		//alert(truther);
+		</script>
+		
+		
+		<div id="result">result</div>
+		
+		<script>
+		var loadNews = function (event) {
+			//$(event).load("index.html");
+		};
+		$("#result").click($("#result").load("index.html"));
+		</script>
+		
+		<canvas></canvas>
+	</body>
+</html>

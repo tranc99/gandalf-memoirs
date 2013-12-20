@@ -1,0 +1,20 @@
+<html>	
+	<head>
+		<title>page</title>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="lesscode.js"></script>
+	</head>
+	<body OnLOad="document.myform.mytextfield.focus()">
+		<h1 id="topics" class="bigDeal">hi there</h1>
+		
+		<h1 id="topics2" class="bigDeal">hi there</h1>
+		<form name="myform">
+			<input type="text" name="mytextfield">
+		</form>
+		
+		
+		<div id="result">result</div>
+		<canvas></canvas>
+		<script src="lesscode.js"></script>
+	</body>
+</html>

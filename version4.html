@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Error Page</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
+</head>
+<body>
+<div style="display:block; height:400px;">
+</div>
+<div>
+	<div id="errorDiv" style="padding: 40px; height: 200px; width: 200px; background-color: #1111;">
+	<h3>
+	This is the cool error page.
+	</h3>
+	<br>
+	<button type="button" onclick="history.back();">Flee, you fools!</button>
+	</div>
+</div>
+<script type="text/javascript">
+	//initialize dialog
+	$(document).ready(function() {
+		$("#dialog").dialog( { 'autoOpen': false } );
+	});
+	//alert("about to:")
+	//move back
+	$("#dialog").dialog("open");
+	setTimeout(function() {
+		history.back(); 
+	}, 3000);
+	//history.back();
+</script>
+<div id="dialog">ERROR ERROR ERROR</div>
+</body>
+</html>
